@@ -1,13 +1,13 @@
 {
-  "name": "nodejs-getting-started",
+  "name": "nodejs-app1",
   "description": "End to end sample for running Node.js applications on Google Cloud Platform",
   "version": "1.0.0",
   "license": "Apache-2.0",
-  "author": "Google Inc.",
+  "author": "Marshell Rodrigues",
   "engines": {
     "node": ">=8"
   },
-  "repository": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
+  "repository": "https://github.com/marshell08/nodejs-app1/",
   "main": "app.js",
   "private": true,
   "cloud-repo-tools": {
