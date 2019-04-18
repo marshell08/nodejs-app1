@@ -61,4 +61,4 @@ steps:
     git commit -m "Deploying image gcr.io/${PROJECT_ID}/nodejs_microservice1-app:${SHORT_SHA}
     Built from commit ${COMMIT_SHA} of repository github_marshell08_nodejs_microservice1-app
     Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
-    git push origin candidate-dev
+    git push -u git@github.com:marshell08/nodejs_microservice1-app.git candidate-dev
