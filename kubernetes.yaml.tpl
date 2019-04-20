@@ -15,21 +15,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs_microservice1
+  name: nodejs-microservice1
   labels:
-    app: nodejs_microservice1
+    app: nodejs-microservice1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nodejs_microservice1
+      app: nodejs-microservice1
   template:
     metadata:
       labels:
-        app: nodejs_microservice1
+        app: nodejs-microservice1
     spec:
       containers:
-      - name: nodejs_microservice1
+      - name: nodejs-microservice1
         image: gcr.io/GOOGLE_CLOUD_PROJECT/nodejs_microservice1-app:COMMIT_SHA
         ports:
         - containerPort: 8080
@@ -37,10 +37,10 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: nodejs_microservice1
+  name: nodejs-microservice1
 spec:
   selector:
-    app: nodejs_microservice1
+    app: nodejs-microservice1
   ports:
   - protocol: TCP
     port: 80
